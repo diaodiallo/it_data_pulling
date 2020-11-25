@@ -1,0 +1,24 @@
+it_data_pulling.test_connexion:
+  path: 'admin/config/it_data_pulling/test-connexion'
+  defaults:
+    _form: '\Drupal\it_data_pulling\Form\ItDataPullingTestConnexionForm'
+    _title: 'Test the connexion'
+  requirements:
+    _permission: 'administer site configuration'
+
+it_data_pulling.pull:
+  path: 'admin/config/it_data_pulling/pull'
+  defaults:
+    _form: '\Drupal\it_data_pulling\Form\ItDataPullingPullForm'
+    _title: 'Pull data'
+  requirements:
+    _permission: 'administer site configuration'
+
+it_data_pulling.settings:
+  path: 'admin/config/pull-setting'
+  defaults:
+    _form: 'Drupal\it_data_pulling\Form\ItDataPullingSettingForm'
+    _title: 'Data pull settings'
+  requirements:
+    _permission: 'administer site configuration'
+

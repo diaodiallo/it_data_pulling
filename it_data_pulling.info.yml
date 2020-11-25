@@ -1,0 +1,5 @@
+name: 'Impact Teams data pulling'
+type: module
+description: 'Pulling IT meeting data from ONA'
+core: 8.x
+package: 'In Supply Health'

@@ -1,0 +1,13 @@
+it_data_pulling.test_connexion:
+  title: Test connexion
+  description: Test the connexion to the remote server.
+  route_name: it_data_pulling.test_connexion
+  appears_on:
+    - it_data_pulling.settings
+
+it_data_pulling.pull:
+  title: Pull data
+  description: Pull data from the remote server
+  route_name: it_data_pulling.pull
+  appears_on:
+    - it_data_pulling.settings

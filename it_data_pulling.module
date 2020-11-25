@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Contains it_data_pulling.module.
+ */
+
+
+/**
+ * Implements hook_cron().
+ *
+ * Run or reload periodically.
+ */
+//function it_data_pulling_cron() {
+//  $config = \Drupal::service('config.factory')
+//    ->getEditable('denormalizer.settings');
+//  if ($config->get('cron_enabled')) {
+//    $last_run = $config->get('last_run');
+//    $reset = NULL;
+//    if ($config->get('reload_every') && ($last_run + $config->get('reload_every') * 60 * 60) <= \Drupal::time()
+//        ->getRequestTime()) {
+//      $reset = TRUE;
+//    }
+//    elseif ($config->get('run_every') && ($last_run + $config->get('run_every') * 60 * 60) <= \Drupal::time()
+//        ->getRequestTime()) {
+//      $reset = FALSE;
+//    }
+//    if (!is_null($reset)) {
+//      $denormalizer = new Denormalizer();
+//      $denormalizer->build();
+//      try {
+//        $denormalizer->execute($reset);
+//      } catch (PDOException $e) {
+//        if (in_array($e->getCode(), ['42S22', '21S01'])) {
+//          \Drupal::logger('denormalizer')
+//            ->info('Different fields detected. Running reload.');
+//          $denormalizer->execute(TRUE);
+//        }
+//      }
+//      $config->set('last_run', \Drupal::time()->getRequestTime())->save();
+//      \Drupal::logger('denormalizer')->info('Ran denormalizer.');
+//    }
+//  }
+//}

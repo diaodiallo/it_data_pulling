@@ -1,0 +1,5 @@
+it_data_pulling.settings:
+  title: Pulling data
+  description: Configure and pull data.
+  route_name: it_data_pulling.settings
+  parent: system.admin_config
